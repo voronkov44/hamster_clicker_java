@@ -1,0 +1,56 @@
+html {
+    font-family: 'Press Start 2P';
+    font-size: 2rem;
+}
+
+body {
+    font-size: 0.5rem;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    background-color: #222;
+    color: white;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    flex-grow: 1;
+}
+
+h1 {
+    margin-bottom: 1rem;
+    font-size: 1.5rem; /* Увеличиваем размер заголовка */
+}
+
+.record-container {
+    display: flex; /* Используем flex для размещения рекордов */
+    flex-direction: column; /* Вертикальное размещение */
+    align-items: center; /* Центрируем рекорды */
+    margin-top: 2rem; /* Отступ сверху для контейнера */
+}
+
+.record {
+    margin: 1rem; /* Отступ между рекордами */
+    padding: 1rem; /* Отступ внутри элемента */
+    border: 2px solid white; /* Белая рамка вокруг рекордов */
+    border-radius: 5px; /* Закругленные углы */
+    background-color: rgba(255, 255, 255, 0.1); /* Прозрачный фон для карточки */
+    transition: transform 0.2s; /* Плавный переход при наведении */
+}
+
+.record:hover {
+    transform: scale(1.05); /* Увеличение элемента при наведении */
+}
+
+footer {
+    margin-top: 2rem; /* Отступ сверху для футера */
+    text-align: center; /* Центрируем текст в футере */
+    color: white; /* Цвет текста белый */
+}
